@@ -1,3 +1,3 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
 
-SRC_URI_append += "${@bb.utils.contains("MACHINE_FEATURES", "mecool-pli", "file://0001-force-amlvsink-to-be-used-for-playing.patch", "", d)}"
+SRC_URI_append += "${@bb.utils.contains_any("MACHINE_FEATURES", "linkdroid-pli mecool-pli", "file://servicemp3-alien5.patch", "", d)}"
