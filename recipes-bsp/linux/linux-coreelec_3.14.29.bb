@@ -16,7 +16,7 @@ KERNEL_LD_append_aarch64 = " ${TOOLCHAIN_OPTIONS}"
 S = "${WORKDIR}/linux-amlogic-amlogic-3.14-nougat"
 B = "${WORKDIR}/build"
 
-MACHINE_KERNEL_PR_append = ".21"
+MACHINE_KERNEL_PR_append = ".22"
 
 DTS = "${@ d.getVar('KERNEL_DEVICETREE').replace('.dtb','.dts') }"
 
@@ -26,8 +26,8 @@ SRC_URI = "https://github.com/OpenVisionE2/linux-amlogic/archive/amlogic-3.14-no
   file://${DTS} \
 "
 
-SRC_URI[md5sum] = "b2fceba1dd5d6ac7076dd0bb2f2756eb"
-SRC_URI[sha256sum] = "1474bc31a10cedacd8d4b4361c9137b210db1f6ea161ed1b716694026af99dcf"
+SRC_URI[md5sum] = "95073e5c90e12666894f63c22e2bdb7f"
+SRC_URI[sha256sum] = "51717f790ff4e4c1164cbb4339a45a75cb57c7e74a5822780fd0bc076329ee13"
 
 do_configure_prepend(){
     sed -i "s/@DISTRONAME@/${MACHINE}/" "${WORKDIR}/defconfig"
