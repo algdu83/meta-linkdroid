@@ -2,7 +2,7 @@ SUMMARY = "SysV init scripts for Amlogic devices set-up"
 DESCRIPTION = "Provides basic set-up for amlogic devices"
 SECTION = "base"
 
-COMPATIBLE_MACHINE = "k1pro|k2pro|k2prov2|k3pro|k1plus|kvim2"
+COMPATIBLE_MACHINE = "k1pro|k2pro|k2prov2|k3pro|k1plus|kvim2|c300|c300pro|c400plus"
 
 include conf/license/license-gplv2.inc
 
