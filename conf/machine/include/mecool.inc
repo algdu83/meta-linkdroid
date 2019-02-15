@@ -1,10 +1,10 @@
 KERNEL_FILE = "kernel.itb"
 ROOTFS_FILE = "rootfs.tar.bz2"
 
-PREFERRED_PROVIDER_virtual/kernel = "linux-coreelec"
-PREFERRED_VERSION_linux-coreelec = "3.14.29%"
+PREFERRED_PROVIDER_virtual/kernel = "linux-amlogic"
+PREFERRED_VERSION_linux-amlogic = "3.14.29%"
 
-MACHINEKERNEL = "coreelec"
+MACHINEKERNEL = "amlogic"
 
 # Amlogic defaults
 require conf/machine/include/arm/arch-armv8.inc

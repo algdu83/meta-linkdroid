@@ -1,4 +1,4 @@
-DESCRIPTION = "Amlogic Kernel (coreelec tree)"
+DESCRIPTION = "Amlogic kernel (CoreELEC tree)"
 SECTION = "kernel"
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://${S}/COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
@@ -16,7 +16,7 @@ KERNEL_LD_append_aarch64 = " ${TOOLCHAIN_OPTIONS}"
 S = "${WORKDIR}/linux-amlogic-amlogic-3.14-nougat"
 B = "${WORKDIR}/build"
 
-MACHINE_KERNEL_PR_append = ".22"
+MACHINE_KERNEL_PR_append = ".23"
 
 DTS = "${@ d.getVar('KERNEL_DEVICETREE').replace('.dtb','.dts') }"
 
@@ -26,8 +26,8 @@ SRC_URI = "https://github.com/OpenVisionE2/linux-amlogic/archive/amlogic-3.14-no
   file://${DTS} \
 "
 
-SRC_URI[md5sum] = "95073e5c90e12666894f63c22e2bdb7f"
-SRC_URI[sha256sum] = "51717f790ff4e4c1164cbb4339a45a75cb57c7e74a5822780fd0bc076329ee13"
+SRC_URI[md5sum] = "3f06429b0b750b9b5a0c84e2ce5f4ae9"
+SRC_URI[sha256sum] = "c78423b9410902eb8bbcf8236cc2e35073e19a4020a3d64e507b18de94b92492"
 
 do_configure_prepend(){
     sed -i "s/@DISTRONAME@/${MACHINE}/" "${WORKDIR}/defconfig"
