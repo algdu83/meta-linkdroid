@@ -45,7 +45,7 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
     linkdroid-libamcodec-alien5 \
     kernel-modules \
     amremote \
-    linkdroid-stb-alien5 \
+    linkdroid-dvb-modules-alien5 \
     linkdroid-libavlib-audio-so-alien5 \
     libmad \
     linkdroid-extra-alien5 \
