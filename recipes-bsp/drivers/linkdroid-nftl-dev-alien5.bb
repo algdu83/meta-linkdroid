@@ -2,7 +2,7 @@ SUMMARY = "AMLogic 905 nftl_dev driver from LE"
 SECTION = "base"
 PRIORITY = "required"
 
-COMPATIBLE_MACHINE = "alien5|k1pro|k2pro|k2prov2|k3pro|k1plus|kvim2|c300|c300pro|c400plus"
+COMPATIBLE_MACHINE = "alien5|k1pro|k2pro|k2prov2|k3pro|k1plus|kvim2|c300|c300pro|c400plus|alien4"
 
 DEPENDS = "virtual/${TARGET_PREFIX}gcc"
 
