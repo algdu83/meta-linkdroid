@@ -46,6 +46,7 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
     linkdroid-libamcodec-alien5 \
     kernel-modules \
     amremote \
+    mecool-dvb-modules-e2procfs \
     kernel-module-e2-procfs \
     kernel-module-aml \
     kernel-module-aml-fe \
