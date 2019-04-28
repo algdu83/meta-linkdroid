@@ -1,3 +1,5 @@
+BOX_BRAND = "mecool"
+
 KERNEL_FILE = "kernel.itb"
 ROOTFS_FILE = "rootfs.tar.bz2"
 
