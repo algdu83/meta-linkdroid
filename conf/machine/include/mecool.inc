@@ -96,6 +96,7 @@ PREFERRED_PROVIDER_jpeg-native = "libjpeg-turbo-native"
 EXTRA_OECONF_append_pn-enigma2 = " --with-alsa --with-alsacard=hw:0 --with-alsamixer=Master --with-fbdev=/dev/fb0 --with-lcddev=/dev/null --with-amlogic"
 DEPENDS_append_pn-enigma2 = " libdvbcsa linkdroid-libamcodec-alien5 linkdroid-libamadec-alien5 gstreamer1.0 gstreamer1.0-plugins-base "
 EXTRA_OECONF_append_pn-tuxtxt-enigma2 = " --with-fbdev=/dev/fb0"
+DEPENDS_append_pn-enigma2-plugin-systemplugins-servicemp3 = " linkdroid-libamcodec-alien5 "
 CC_append_pn-showiframe = " -DHAVE_AMLOGIC -I${STAGING_INCDIR}/amlogic/amcodec -lamcodec -lgstpbutils-1.0 -lgstreamer-1.0 -lgobject-2.0 -lglib-2.0"
 DEPENDS_append_pn-showiframe = " linkdroid-libamcodec-alien5 gstreamer1.0 gstreamer1.0-libav gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly"
 
