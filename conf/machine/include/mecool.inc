@@ -93,6 +93,8 @@ MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS += "\
 PREFERRED_PROVIDER_jpeg = "libjpeg-turbo"
 PREFERRED_PROVIDER_jpeg-native = "libjpeg-turbo-native"
 
+DVBMEDIASINK_CONFIG = "--with-wmv --with-pcm --with-eac3 --with-h265 --with-dtsdownmix"
+
 EXTRA_OECONF_append_pn-enigma2 = " --with-alsa --with-alsacard=hw:0 --with-alsamixer=Master --with-fbdev=/dev/fb0 --with-lcddev=/dev/null --with-amlogic"
 DEPENDS_append_pn-enigma2 = " libdvbcsa linkdroid-libamcodec-alien5 linkdroid-libamadec-alien5 gstreamer1.0 gstreamer1.0-plugins-base "
 EXTRA_OECONF_append_pn-tuxtxt-enigma2 = " --with-fbdev=/dev/fb0"
