@@ -5,7 +5,7 @@ include conf/license/license-gplv2.inc
 
 COMPATIBLE_MACHINE = "k1pro|k2pro|k2prov2|k3pro|k1plus|kvim2|c300|c300pro|c400plus|alien4"
 
-PR = "r6"
+PR = "r7"
 
 inherit pkgconfig update-rc.d
 
@@ -19,9 +19,11 @@ S = "${WORKDIR}"
 
 SRC_URI = " \
     file://amlsetfb \
+    file://aaa \
 "
 
 do_install() {
     install -d ${D}${sysconfdir}/init.d
     install -m 0755 ${WORKDIR}/amlsetfb  ${D}${sysconfdir}/init.d/amlsetfb
+    install -m 0755 ${WORKDIR}/aaa  ${D}${sysconfdir}/init.d/aaa
 }
