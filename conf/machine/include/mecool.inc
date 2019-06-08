@@ -52,8 +52,6 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
     kernel-module-e2-procfs \
     kernel-module-aml \
     kernel-module-aml-fe \
-    kernel-module-avl6862 \
-    kernel-module-r848a \
     kernel-module-dhd \
     linkdroid-libavlib-audio-so-alien5 \
     libmad \

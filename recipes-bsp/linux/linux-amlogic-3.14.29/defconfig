@@ -1059,12 +1059,12 @@ CONFIG_GXBB_SUSPEND=y
 #
 # AVL6862 dvb driver
 #
-CONFIG_AVL6862=m
+# CONFIG_AVL6862 is not set
 
 #
 # Amlogic DVB driver
 #
-# CONFIG_AM_DVB is not set
+CONFIG_AM_DVB=y
 # CONFIG_AM_ATVDEMOD is not set
 
 #
