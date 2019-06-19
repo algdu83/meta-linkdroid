@@ -11,8 +11,6 @@ DEPENDS = "lzop-native virtual/${TARGET_PREFIX}gcc"
 
 inherit kernel machine_kernel_pr
 
-MACHINE_KERNEL_PR_append = ".10"
-
 LOCALVERSION ?= ""
 SRCDATE = "20181012"
 

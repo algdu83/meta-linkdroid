@@ -16,8 +16,6 @@ KERNEL_LD_append_aarch64 = " ${TOOLCHAIN_OPTIONS}"
 S = "${WORKDIR}/linux-amlogic-libreelec-amlogic-3.14.y"
 B = "${WORKDIR}/build"
 
-MACHINE_KERNEL_PR_append = ".5"
-
 DTS = "${@ d.getVar('KERNEL_DEVICETREE').replace('.dtb','.dts') }"
 
 SRC_URI = "https://github.com/OpenVisionE2/linux-amlogic-libreelec/archive/amlogic-3.14.y.tar.gz \

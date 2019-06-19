@@ -6,8 +6,6 @@ COMPATIBLE_MACHINE = "k1pro|k2pro|k2prov2|k3pro|k1plus|kvim2|c300|c300pro|c400pl
 
 include conf/license/license-gplv2.inc
 
-PR = "r2"
-
 inherit pkgconfig update-rc.d
 
 INITSCRIPT_NAME = "mecool-setup"
