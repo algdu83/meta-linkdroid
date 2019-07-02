@@ -33,6 +33,8 @@ do_install() {
 	echo "e2_procfs" > ${D}/${sysconfdir}/modules-load.d/_${MACHINE}.conf
 	echo "aml" >> ${D}/${sysconfdir}/modules-load.d/_${MACHINE}.conf
 	echo "aml_fe" >> ${D}/${sysconfdir}/modules-load.d/_${MACHINE}.conf
+	echo "avl6862" >> ${D}/${sysconfdir}/modules-load.d/_${MACHINE}.conf
+	echo "r848a" >> ${D}/${sysconfdir}/modules-load.d/_${MACHINE}.conf
 	echo "dhd" >> ${D}/${sysconfdir}/modules-load.d/_${MACHINE}.conf
 }
 

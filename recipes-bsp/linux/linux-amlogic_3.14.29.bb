@@ -1,4 +1,4 @@
-DESCRIPTION = "Amlogic kernel (LibreELEC tree)"
+DESCRIPTION = "Amlogic kernel (CoreELEC tree)"
 SECTION = "kernel"
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://${S}/COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
@@ -13,19 +13,19 @@ DEPENDS_append_aarch64 = " libgcc"
 KERNEL_CC_append_aarch64 = " ${TOOLCHAIN_OPTIONS}"
 KERNEL_LD_append_aarch64 = " ${TOOLCHAIN_OPTIONS}"
 
-S = "${WORKDIR}/linux-amlogic-libreelec-amlogic-3.14.y"
+S = "${WORKDIR}/linux-amlogic-coreelec-amlogic-3.14-nougat"
 B = "${WORKDIR}/build"
 
 DTS = "${@ d.getVar('KERNEL_DEVICETREE').replace('.dtb','.dts') }"
 
-SRC_URI = "https://github.com/OpenVisionE2/linux-amlogic-libreelec/archive/amlogic-3.14.y.tar.gz \
+SRC_URI = "https://github.com/OpenVisionE2/linux-amlogic-coreelec/archive/amlogic-3.14-nougat.tar.gz \
   file://defconfig \
   file://openvision.patch \
   file://${DTS} \
 "
 
-SRC_URI[md5sum] = "5967c3fc8a0bd17df4ef30586d7099c1"
-SRC_URI[sha256sum] = "44a9845b64b7e8e2947200b9d0ed953d023223b294ef2b0f8f5c722ce26de177"
+SRC_URI[md5sum] = "bd6493603402fd6052b809831e0ab9a4"
+SRC_URI[sha256sum] = "c07e1b89fdcd33a41c1e7c089221b9a2e1b09e4a10e8bb22aa94dda2406a4ade"
 
 do_configure_prepend(){
     sed -i "s/@DISTRONAME@/${MACHINE}/" "${WORKDIR}/defconfig"
